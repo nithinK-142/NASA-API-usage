@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var api_key = "zgJdLdKXYObo6YFMAgHbfNbog3Edqdv5EJb3ncbx";
+    var api_key = "API_KEY";
     var url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=" + api_key;
 
     $.getJSON(url, function(data) {
