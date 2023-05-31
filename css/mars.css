@@ -23,16 +23,23 @@ header {
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 70px;
 }
-
+#header1 {
+    font-family: Times, serif;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 header img {
-    margin-top: 20px;
+    height: 60px;
     margin-left: 20px;
     width: 70px;
 }
-
 nav {
     margin-right: 20px;
 }
@@ -45,10 +52,14 @@ nav ul {
 }
 
 nav li {
-    margin-left: 10px;
+    margin-top: 40px;
+    margin-right: 80px;
 }
-
+nav #dialogBtn {
+    margin-right: -30px;
+}
 nav a {
+    cursor: pointer;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -81,7 +92,6 @@ img {
     height: auto;
     margin: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
 /* footer */
