@@ -7,7 +7,7 @@ $(document).ready(function() {
             var count = 0;
             $.each(data.photos, function(index, element) {
                 if (count >= 12) {
-                    return false; // break out of the loop
+                    return false;
                 }
                 images_div.append("<img src='" + element.img_src + "' alt='Mars photo'>");
                 count++;
