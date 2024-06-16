@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>NASA Image Gallery</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" type="image/x-icon" href="../nasa.svg" />
-      <link rel="stylesheet" href="../css/search.css">
-      <link rel="stylesheet" href="../css/dialog.css">
-   </head>
-   <body>
-      <header>
-         <div>
-            <img src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg" alt="NASA logo">
-         </div>
-         <nav>
-            <ul>
-               <li><a id="dialogBtn">About</a></li>
-               <li><a href="../index.html">Home</a></li>
-            </ul>
-         </nav>
-      </header>
 
-      <dialog id="about">
-         <h3><pre>The app lets users search NASA gallery via specific criteria; enter
+<head>
+   <title>NASA Image Gallery</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" type="image/x-icon" href="../nasa.svg" />
+   <link rel="stylesheet" href="../css/search.css">
+   <link rel="stylesheet" href="../css/dialog.css">
+</head>
+
+<body>
+   <header>
+      <div>
+         <img src="../nasa.svg" alt="NASA logo">
+      </div>
+      <nav>
+         <ul>
+            <li><a id="dialogBtn">About</a></li>
+            <li><a href="../index.html">Home</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <dialog id="about">
+      <h3>
+         <pre>The app lets users search NASA gallery via specific criteria; enter
 keywords for planets, missions, or relevant terms.It, retrieves 
 matching images, and displays search results, enabling users to
 explore NASA's vast visual collection.
-         </pre></h3>
-         <button id="btn">alright!</button>
-     </dialog>
+         </pre>
+      </h3>
+      <button id="btn">alright!</button>
+   </dialog>
 
-      <h1 id="header">NASA Image Gallery</h1>
+   <h1 id="header">NASA Image Gallery</h1>
 
-      <form onsubmit="return searchPlanet(event)">
-         <input type="text" id="planet-input" placeholder="Search(eg. earth)" />
-         <button type="submit" id="button1">Search</button>
-         <button type="button" id="clear-button" onclick="clearInput()">Clear</button>
-      </form>
+   <form onsubmit="return searchPlanet(event)">
+      <input type="text" id="planet-input" placeholder="Search(eg. earth)" />
+      <button type="submit" id="button1">Search</button>
+      <button type="button" id="clear-button" onclick="clearInput()">Clear</button>
+   </form>
 
-      <div id="planet-image"></div>
-      <footer>
-         <p>Created by <a target="_blank" href="https://github.com/nithinK-142">Nithin</a></p>
-      </footer>
+   <div id="planet-image"></div>
+   <footer>
+      <p>Created by <a target="_blank" href="https://github.com/nithinK-142">Nithin</a></p>
+   </footer>
 
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="../js/dialog.js"></script>
-      <script src="../js/search.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="../js/dialog.js"></script>
+   <script src="../js/search.js"></script>
 
-   </body>
+</body>
+
 </html>
